@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cancel reservation</title>
+<link rel="stylesheet" href="../../CSS/event css/stylecancel.css">
+</head>
+<body>
+  <header>
+      <div class="wrapper">
+        <div class="logo">
+            <a href="../home/home.html"> <img class="image"  src="../../resources/images/MLOGO.png" alt="logo" ></a>
+            Mysteria Restaurant
+        </div>
+        <nav>
+            <a href="../home/home.html">home</a> <a href="../review/about us2.html">about us</a><a href="../review/contact.html">contact</a><a href="../review/Feedback2.html">Feedback</a><a href="Gi.html">gift card</a>
+        </nav>
+      </div>
+  </header>
+  <main>
+    <section>
+        
+    <div class="full-page">
+        <div class="sub-page">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="form-box">
+                            <div class="form">
+                                <form action="../reservation/cancelled.html" class="login-form">
+                                    <center><h3 class="main-heading">Reservation cancellation Form</h3></center><br>
+                                    <label for="Fname">First Name:</label>
+                                    <input type="text" name="name" class='input-field' placeholder="Enter first name" id="Fname"  required>
+                                    <label for="Lname">Last Name:</label>
+                                    <input type="text" name="Lname" class='input-field' placeholder="Enter Last name" id="Lname"  required>
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" name="email address" class='input-field' placeholder="Enter email address" id="email"  required> <label for="date">Date:</label>
+                                    <input type="date" name="date" id="date"  min="2022-01-22"  max="2022-05-25" class='input-field' required>
+
+                                    <label for="position">Position:</label>
+                                    <select name="position" id="position">
+                                        <option class='input-field' value="outdoor">Out door</option>
+                                        <option class='input-field' value="indoor">Indoor</option>
+                                        <option class='input-field' value="roof top">Roof top</option>
+                                    </select> <br> <br>
+
+                                    <label for="occasions">Occasions:</label>
+                                        <input type="checkbox" name="occasion" class='input-field' id="occasions">Bridal Shower <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Wedding <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Baby Shower <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Birthday Party <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Meeting <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Charity Event <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Anniversary<br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Holiday Parties
+                                        
+                                        <input type="button" class='submit-button'onclick="window.location.href='events terms and conditions.html';" value="Terms and conditions"/><br>
+                                        <button type='submit'class='submit-button'>cancel Reservation</button>				        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            You can also call:
+            <ul>
+                <li> +251110000101</li>
+                <li> +251967882862, for more information</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
