@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="charset" content="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="Rediet">
+    <meta name="description" content="webpage for mysteria restaurant's table reservation terms and conditions.">
+    <meta name="keywords" content="terms,conditions,mysteria">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <title>Reservation Form</title>
+    <script>
+            function openNav(){
+                document.getElementById("sideNav").style.width="250px";
+                document.getElementById("header").style.marginLeft="250px";
+                document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+            }
+             function closeNav(){
+                document.getElementById("sideNav").style.width="0";
+                document.getElementById("header").style.marginLeft="0";
+                document.body.style.backgroundColor="white";
+            }
+</script>
+</head>
+<body id="body">
+<header>
+    <div id="sideNav">
+        <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+        <ul type="none" >
+            <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
+            <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
+            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
+            <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
+            <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
+            <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
+            <li><a href="../order/order2.html">Food Order </a></li><hr/>
+        </ul>
+    </div>
+    <div class="headerShadow">
+        <div class="header">
+            <div id="navigation">
+                <nav id="letters">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/contact.html">Contact Us</a>
+                    <a href="../review/about us2.html">About Us</a>
+                </nav>
+                <nav id="logos">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/contact.html">&#8505;</a>
+                    <a href="../review/about us2.html">&#9743;</a>
+                </nav>
+            </div>
+            <div id="logo">
+                <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <form id="srchform" role="search">
+            <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+            <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+        </form>
+    </div>
+</header>
+<section>
+    <div class="row">
+        <div class="form col-6">
+            <form  method="POST" action="table reserved.html">
+                <hr><h4>Table Reservation Form</h4> <hr>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" placeholder= "Full Name"  required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+                <label for="date">Date:</label><br>
+                <input type="date" name="date" id="date" required><br>
+                <label for="time">Time:</label><br>
+                <input type="time" name="time" id="time" required><br>
+                <label for="position">Position:</label><br>
+                <select name="position" id="position">
+                    <option value="outdoor">Out door</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="roof top">Roof top</option>
+                </select><br>
+                <label for="table_type">Table Type:</label><br>
+                <select name="table type" id="table_type">
+                    <option value="mysteria">Mysteria Table</option>
+                    <option value="dinner">Dinner Table</option>
+                    <option value="candle">Candle Table</option>
+                    <option value="family">Family Table</option>
+                </select><br>
+                <label for="parking">Car parking:</label><br>
+                <input type="radio" id="parking" value="yes" name="car parking">Yes<br>
+                <input type="radio" id="parking2" value="no" name="car parking">No  <br>
+                <label for="people">How many people?</label><br>
+                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
+                <label for="phone">phone:</label><br>
+                <select name="phone code" id="phone">
+                    <option value="+251">+251</option>
+                    <option value="+12">+120</option>
+                </select>
+                <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" required ><br>
+                <label for="card">Payment Type:</label><br>
+                <select name="card type" id="card">
+                    <option value="visa card">visa card</option>
+                    <option value="master card">master card</option>
+                    <option value="credit card">credit card</option>
+                    <option value="paypall">paypall</option>
+                </select><br>
+                <label for="acc_number">account:</label><br>
+                <input type="number" name="account number" id="acc_number" pattern="[0-9]{15}" placeholder="Enter account number" required><br><br><br>
+                <input type="button" onclick="window.location.href='terms and conditions.html';" value="Terms and conditions"/>
+                <input type="submit" value="Make Reservation"/><hr><br>
+                You can also call:
+                <ul>
+                    <li> +251110000101</li>
+                    <li> +251967882862, to make reservation</li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col-3">
+            <ul>
+                <li><a href="../review/Feedback2.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="col-6 followLinks">
+                <h4>follow us</h4><br>
+                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/mysteriaRestaurant"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
