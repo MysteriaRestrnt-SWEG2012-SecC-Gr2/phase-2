@@ -243,7 +243,7 @@ padding:0;
 section{
 background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/white1.jpg");
 background-repeat:no-repeat;
-background-size:contain;
+background-size: cover;
 opacity:0.5;
 margin-top:205px;
 padding:5%;
