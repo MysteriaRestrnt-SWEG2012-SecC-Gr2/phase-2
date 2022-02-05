@@ -2,7 +2,11 @@
 box-sizing:border-box;
 }
 body{
-    background-color:pink;
+    overflow: visible;
+
+ background-color: black;
+color: white ;
+
 font-family:"Lato", sans-serif;
 transition:background-color .5s;
 }
@@ -15,7 +19,40 @@ text-decoration:none;
  }
 a:visited{color:silver;}
 a:active{color:rgb(102, 255, 153);}
+a:hover{
+    background-color: lightblue;
+}
+h1,h2,h3,h4,h5,h6,  {
+  text-shadow: 2px 2px;
+}
+</style>
+input[type="text"] {
+     width: 50%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+input[type="email"] {
+    width: 50%;
+    padding: 14px 20px;
+  margin: 8px 0;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
 
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -122,6 +159,15 @@ margin-left:5px;
  text-shadow:1px 1px 2px black;
  opacity:0.5;
  background-color:seashell;
+}
+a:link, a:visited {
+  background-color:orange;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
 }
 .headerShadow{
 filter:drop-shadow(5px 5px 5px rgb(80,80,80));
@@ -276,7 +322,7 @@ max-width:85%;
 background-color:rgba(2,2,2,0.7);
 }
 section div.form p{
-text-align:center;
+text-align:none;
 font-size:2em;
 font-family: Courier New, Lucida Console;
 color:seashell;
