@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta name="charset" content="UTF-8">
+	<meta name="charset" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Meron E.">
-    <meta name="description" content="webpage for mysteria restaurant's delivery">
-    <meta name="keywords" content="delivery,mysteria">
-    <title>Food Menu</title>
-    <link rel="stylesheet" type="text/css" href="../../css/Appetizer.css">
+    <meta name="description" content="webpage for mysteria restaurant's Menu">
+    <meta name="keywords" content="Menu,mysteria">
+    <title>Mysteria mysetrious Menu</title>
+    <link rel="stylesheet" type="text/css" href="../../css/MenuStyle.css">
 <script>
         function openNav(){
             document.getElementById("sideNav").style.width="18%";
@@ -22,8 +22,8 @@
         }
     </script>
 </head>
-<body bgcolor="PaleGoldenRod" link="white">
-    <header>
+<body>
+	<header>
     <div id="sideNav">
         <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
         <ul type="none" >
@@ -66,55 +66,153 @@
             </form>
         </div>
 </header>
-        <main>
-            <section>
-            <div class="middlebox" style="max-width:1900px;margin-top:100px">
-            <div class="content">
-            <h2 style="width: 100%">Mysteria Restaurant Food menu</h2>
-        <div class="main">
-        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-            	<cite>- Jamie Oliver</cite>
-        	</blockquote>
-            <a href="Appetizer.html"><button>Appetizer</button></a>
-            <a href="vegetarian.html"><button>Vegeterian</button></a>
-            <a href="Meatatarian (meat, chicken, fish, vegetables).html"><button>Meataterian(Meat, Chicken, Fish....)</button></a>
-            <a href="Drinks.html"><button>Drinks</button></a>
-            <a href="Dessert.html"><button>Dessert</button></a>
-            <a href="special.html"><button>Special</button></a>
-        <div class="items">
-            <video width="400" height="250" autoplay controls muted loop>" <source src="../../Resources/videos/Kitchen - 3510.mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br> 
-        </div>
-        <div class="items">
-            <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source  src="../../Resources/videos/mainpage.mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br> 
-                <hr>
-        </div>
-        <div class="items">
-            <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source  src="../../Resources/videos/istockphoto.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br> 
-                <hr>
+
+<section id="upper">
+    <div class="upper-inner">
+      <div id="heroCarousel" class="carousel slide carousel-fade">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" style="background-image: url(../../resources/images/menu.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>Mysteria Restaurant</span> Food menu</h2>
+                <p class="animate__animated animate__fadeInUp">Real food doesn't have ingredients, real food is ingredients.<br>
+                													- Jamie Oliver</p>
+                <div>
+                  <a href="Appetizer.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Appetizer</a>
+                  <a href="vegetarian.html" class="btn-book animate__animated animate__fadeInUp scrollto">Vegeterian</a>
+                  <a href="Meatatarian (meat, chicken, fish, vegetables).html" class="btn-menu animate__animated animate__fadeInUp scrollto">Meataterian(Meat, Chicken, Fish....)</a>
+                  <a href="Drinks.html" class="btn-book animate__animated animate__fadeInUp scrollto">Drinks</a>
+                  <a href="Dessert.html" class="btn-menu animate__animated animate__fadeInUp scrollto">Dessert</a>
+                  <a href="special.html" class="btn-book animate__animated animate__fadeInUp scrollto">Special</a>
                 </div>
-        <div class="items">
-            <video width="400" height="250" autoplay controls muted loop>" <source src="../../Resources/videos/Kitchen - 3510.mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br> 
-                <hr>
-                </div>
-        <div class="items">
-                <video align="center" valign="middle" width="400" height="250"  controls autoplay muted loop> <source src="../../Resources/videos/Dessert.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br>
-                    <hr>
-                </div>
-        <div class="items">
-                <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source src="../../Resources/videos/Wine - 81170.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br>
-                    <hr>
-                </div>
-        <div class="items">
-                <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source src="../../Resources/videos/fooddii (2).mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video><br>
-                    <hr>
-                </div>
-        </div>
-    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
 </div>
-        </section>
-         </main>
-    
-    <footer id="btm">
+</section>
+<main id="main">
+	
+ <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos and videos from Our Restaurant</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <video width="400" height="250" autoplay controls muted loop id="video-style">" <source src="../../Resources/videos/Kitchen - 3510.mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+               <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source  src="../../Resources/videos/mainpage.mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source  src="../../Resources/videos/istockphoto.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <video align="center" valign="middle" width="400" height="250"  controls autoplay muted loop> <source src="../../Resources/videos/Dessert.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source src="../../Resources/videos/Wine - 81170.mp4"   type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <video align="center" valign="middle" width="400" height="250" autoplay controls muted loop> <source src="../../Resources/videos/fooddii (2).mp4"  type="video/mp4" title="Eat Healthier Live happier">Your browser can't play this video </video>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+             <img src="../../resources/images/Old-Fashioned-Peanut-Butter-Cookies.jpg" width="400px" height="250px">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../Resources/images/apple.jpeg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Roast-Chicken.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Zucchini-Lasagna-Rolls.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/beef burger.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Tibs.jpg" width="400px" height="250px">
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Homemade-Chocolate-Pudding.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/garlic grilled steaks.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/tej.jpeg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Guacamole.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <img src="../../resources/images/Samosas.jpg" width="400px" height="250px">
+            </div>
+          </div>
+          </div>
+        </div>
+      
+    </section>
+</main>
+
+
+
+
+	<footer id="btm">
     <div class="feedback col-3">
         <a href="#">Feedback</a>
     </div>
