@@ -264,11 +264,7 @@ padding:1%;
 overflow:hidden;
 
 }
-<<<<<<< Updated upstream
-#sectionTop,#sectionTopOrder,#sectionTopContact{
-=======
 #sectionTop,#sectionTopOrder{
->>>>>>> Stashed changes
 padding:0;
 margin-left:0;
 opacity:.95;
@@ -283,31 +279,6 @@ clip-path:polygon(0 0,100% 0,100% 85%, 50% 100%,0 85%);
 #sectionTopOrder{
 background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/bistro.jpg");
 }
-<<<<<<< Updated upstream
-#sectionTopContact{
-background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/contact.jpg");
-}
-.info{
-margin-left:17%;
-overflow:hidden;
-border-radius:20px;
-padding:10px;
-background-color:rgba(0,0,0,0.7);
-font-family:courier new;
-font-size:1em;
-color:#ffb03b;
-line-height:2;
-}
-.info h2{
-text-align:center;
-font-size:2em;
-font-family: cambria heading;
-color:#ffb03b;
-background-color:rgba(1,1,1,0.9);
-border-radius:20px;
-}
-=======
->>>>>>> Stashed changes
 .topTxt{
 font-family: 'Luxurious Roman', cursive;
 position:absolute;
@@ -547,61 +518,6 @@ footer a{
     display:table;
     opacity:1;
     visibility: visible;
-<<<<<<< Updated upstream
-}
-
-.popup_page {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 17rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../resources/images/popup_img.jpg);
-    background-size: cover;
-    border-radius: 2rem;
-}
-.popup_page1 {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 80%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../resources/images/popup_img.jpg);
-    background-size: cover;
-    border-radius: 2rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.popup_page-content {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 300;
-    margin-top: 5rem;
-     color: #ffb03b;
-}
-
-.popup_page-content button, #termsbtn{
-        border-radius:10px;
-        border: solid 2px #ffb03b;
-        background-color: black;
-        color:#ffb03b;
-}
-.popup_page-content button:hover, #termsbtn:hover{
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background color:#ffb03b ;
-        color: white;
-}
-.popup_page-close {
-    font-size:1.75em;
-    position: fixed;
-    top: 5%;
-    right:2%;
-=======
->>>>>>> Stashed changes
 }
 
 .popup_page {
