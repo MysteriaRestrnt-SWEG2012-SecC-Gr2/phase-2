@@ -12,8 +12,8 @@
     <script>
         function openNav(){
             document.getElementById("sideNav").style.width="18%";
-            document.body.style.marginLeft="18%";
-            document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor="rgba(0,0,0,0.7)";
 
         }
          function closeNav(){
@@ -25,10 +25,10 @@
     </script>
 </head>
 <body>
-<header>
+<header class="row">
     <div id="sideNav">
         <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
-        <ul type="none" >
+        <ul>
             <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
             <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
             <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
@@ -68,11 +68,19 @@
             </form>
         </div>
 </header>
-<section >
+
+<section>
+    <div class="row" id="sectionTop">
+        <div class="topTxt">
+            <h1><span class="restaurant">Mysteria restaurant</span> delivery</h1>
+            <p>...order our satisfactory delivery and enjoy exquisite meals from the comfort of your home</p>
+        </div>
+    </div>
     <div class="row">
         <div class="form col-6">
-            <p>Delivery form</p>
-            <form id="delivForm" action="last.html">
+
+            <h2>Delivery form</h2>
+            <form class="delivForm" action="#popup3">
                 <label for="fname">First Name:</label><br>
                 <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
 
@@ -89,7 +97,7 @@
                 <textarea  id="order"  name="order" rows="3" cols="30" placeholder="Place Your Order Here"></textarea><br>
 
                 <label for="quantity">Quantity of orders:</label><br>
-                <input type="number" name="quantity" id="quantity" placeholder="number of orders" required><br>
+                <input type="number" name="quantity" id="quantity" placeholder="number of orders" min="1" max="10" required><br>
 
                 <label for="phone">Phone Number:</label><br>
                 <select name="phone code" id="phone">
@@ -104,17 +112,37 @@
                 <input type="submit" value="Submit Delivery Information"><hr>
             </form>
         </div>
-        <div class="col-3">
+        <div class="col-3 goto1">
             <div class="goto"><a href="#btm">&#10225; &nbsp; Bottom</a></div>
         </div>
     </div>
+
+
 </section>
-<footer id="btm">
-    <div class="feedback col-3">
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="#Feedback" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>You have ordered your food successfully, your order will be delivered shortly.<br>THANK YOU FOR CHOOSING US.<br>
+                Email Us at <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a> For more information.<br>
+            </p>
+            <button  onclick="window.location.href='delivery.html';">Order again</button>
+         </div>
+    </div>
+</section>
+<!--<a href="#popup3">Feedback</a>-->
+<footer>
+    <div id="btm" class="feedback col-3">
         <a href="#">Feedback</a>
+        <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
     </div>
         <div class="footer row">
-
             <div class="col-9 followLinks">
                 <br><br>
                 <p>Follow us on </p>
