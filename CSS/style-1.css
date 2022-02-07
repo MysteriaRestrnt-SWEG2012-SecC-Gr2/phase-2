@@ -279,6 +279,28 @@ clip-path:polygon(0 0,100% 0,100% 85%, 50% 100%,0 85%);
 #sectionTopOrder{
 background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/bistro.jpg");
 }
+#sectionTopContact{
+background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/contact.jpg");
+}
+.info{
+margin-left:17%;
+overflow:hidden;
+border-radius:20px;
+padding:10px;
+background-color:rgba(0,0,0,0.7);
+font-family:courier new;
+font-size:1em;
+color:#ffb03b;
+line-height:2;
+}
+.info h2{
+text-align:center;
+font-size:2em;
+font-family: cambria heading;
+color:#ffb03b;
+background-color:rgba(1,1,1,0.9);
+border-radius:20px;
+}
 .topTxt{
 font-family: 'Luxurious Roman', cursive;
 position:absolute;
