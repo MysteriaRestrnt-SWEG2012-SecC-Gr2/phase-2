@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="charset" content="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="Rediet">
+    <meta name="description" content="webpage for mysteria restaurant's table reservation terms and conditions.">
+    <meta name="keywords" content="terms,conditions,mysteria">
+    <link rel="stylesheet" href="../../CSS/style-1.css">
+    <title>Reservation Cancellation Form</title>
+    <script src="node.js"></script>
+    <script>
+
+var name=document.resForm.name.value;
+var email=document.resForm.email.value;
+var date=document.resForm.date.value;
+var people=document.resForm.people.value;
+var atPosition=email.indexOf('@');
+var dotPosition=email.lastIndexOf('.');
+
+function checkForm(){
+if(name==null||name=""){
+alert("Name Required");
+return false;
+}
+else if (email==null||email==""){
+alert("Email Required");
+return false;
+}
+else if((dotPosition-atPosition<1)||(email.length-dotPosition<3)||(atPosition<1)){
+alert("Invalid Email");
+return false;
+}
+else if(date==null||date==""){
+alert("Date Required");
+return false;
+}
+
+else if((date.length>10)||(date.length<10)){
+alert("Invalid Date Format");
+return false;
+}
+else if(people<1||people>10)
+{
+alert("number of people cannot exceed 10 or less than 1");
+return false;
+}
+else{return true;}
+}
+</script>
+    <script>
+        function openNav(){
+            document.getElementById("sideNav").style.width="250px";
+            document.getElementById("body").style.marginLeft="250px";
+            document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+        }
+         function closeNav(){
+            document.getElementById("sideNav").style.width="0";
+            document.getElementById("body").style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <div id="sideNav">
+        <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+        <ul type="none" >
+            <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
+            <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
+            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
+            <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
+            <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
+            <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
+            <li><a href="../order/order2.html">Food Order </a></li><hr/>
+        </ul>
+    </div>
+    <div class="headerShadow">
+        <div class="header">
+            <div id="navigation">
+                <nav id="letters">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/contact.html">Contact Us</a>
+                    <a href="../review/about us2.html">About Us</a>
+                </nav>
+                <nav id="logos">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/contact.html">&#8505;</a>
+                    <a href="../review/about us2.html">&#9743;</a>
+                </nav>
+            </div>
+            <div id="logo">
+                <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <form id="srchform" role="search">
+            <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+            <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+        </form>
+    </div>
+</header>
+<section>
+    <div class="row">
+        <div class="form col-6">
+            <p>Reservation cancellation Form</p>
+            <form name="resForm" action="cancelled.html" onsubmit="checkForm()">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder= "Enter Full Name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder= "Enter Email"><br>
+
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date"><br>
+
+                <label for="position">Position:</label>
+                <select name="position" id="position">
+                    <option value="outdoor">Out door</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="roof top">Roof top</option>
+                </select><br>
+                <label for="table_type">Table Type:</label>
+                <select name="table type" id="table_type">
+                    <option value="mysteria">Mysteria Table</option>
+                    <option value="dinner">Dinner Table</option>
+                    <option value="candle">Candle Table</option>
+                    <option value="family">Family Table</option>
+                </select><br>
+                <label for="people">How many people?</label>
+                <input type="number" name="people" id="people" placeholder= "Number of people"><br>
+                <input type="button" onclick="window.location.href='terms and conditions.html';" value="Terms and conditions"/>
+                <input type="submit" value="cancel Reservation"><hr><br>
+                You can also call:
+                <ul>
+                    <li> +251110000101</li>
+                    <li> +251967882862, for more information</li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="row">
+        <div class="col-3">
+            <ul>
+                <li><a href="../review/Feedback2.html">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="col-6 followLinks">
+                <h4>follow us</h4><br>
+                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/mysteriaRestaurant"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

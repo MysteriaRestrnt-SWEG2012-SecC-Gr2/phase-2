@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reserve</title>
+    <link rel="stylesheet" href="../../CSS/styleform.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="../home/home.html"> <img class="image"  src="../../resources/images/MLOGO.png" alt="logo" ></a>
+            Mysteria Restaurant
+          </div>
+          <nav>
+            <a href="../home/home.html">home</a> <a href="../review/about us2.html">about us</a><a href="../review/contact.html">contact</a><a href="../review/Feedback2.html">Feedback</a><a href="Gi.html">gift card</a>
+          </nav>
+        </div>
+        <div>
+          <br>
+          <form id="form" role="search">
+              <input type="search" class="input-fields" size="15"  id="query" name="q" placeholder="Search" aria-label="search through site content">
+              <button class="searchi" >Search</button>
+          </form>
+      </div>
+    </header>
+    <main>
+    <div class="full-page">
+        <div class="sub-page">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="form-box">
+                            <div class="form">
+                                <form action="registered.html" class="login-form">
+                                    <center><h3 class="main-heading">Reservation Form</h3></center><br>
+                                    <label for="Fname">First Name:</label></font>
+                                    <input type="text" name="name" class='input-field' placeholder="Enter first name" id="Fname"  required>
+                                    <label for="Lname">Last Name:</label></font>
+                                    <input type="text" name="Lname" class='input-field' placeholder="Enter Last name" id="Lname"  required>
+                                    <label for="email">Email Address:</label></font>
+                                    <input type="email" name="email address" class='input-field' placeholder="Enter email address" id="email"  required> <label for="date">Date:</label></font>
+                                    <input type="date" name="date" id="date"  min="2022-01-22"  max="2022-05-25" class='input-field' required>
+                                    <label for="time">Time:</label></font>
+                                    <input type="Time" name="time" class='input-field' id="time" required>
+                                    <label for="occasions">Occasions:</label></font>
+                                        <input type="checkbox" name="occasion" class='input-field' id="occasions">Bridal Shower <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Wedding <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Baby Shower <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Birthday Party <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Meeting <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Charity Event <br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Anniversary<br>
+                                        <input type="checkbox" name="occasion" class='input-field'id="occasions">Holiday Parties
+                                        <label for="quantity">How Many People?</label></font>
+                                        <select class='input-field' name="select" id="quantity">
+                                            <option value="1-10"class='input-field'>1-10 person</option>
+                                            <option value="11-20"class='input-field'>11-20 person</option>
+                                            <option value="21-30"class='input-field'>21-30 person</option>
+                                            <option value="30-50"class='input-field'>30-50 person</option>
+                                            <option value="50+" class='input-field'>50+ person</option>
+                                        </select>
+                                        <label for="phone">Phone Number:</label></font>
+                                        <select name="phone code" id="phone">
+                                            <option value="+251" class='input-field'>+251</option>
+                                            <option value="+12" class='input-field'>+120</option>
+                                        </select>
+                                        <input type="tel" id="phone" name="phone" class='input-field' placeholder="967882862" pattern="[0-9]{9}" required >
+                                        <input type="button" class='submit-button'onclick="window.location.href='events terms and conditions.html';" value="Terms and conditions"/><br>
+                                        <button type='submit'class='submit-button'>Reserve now</button>				        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
