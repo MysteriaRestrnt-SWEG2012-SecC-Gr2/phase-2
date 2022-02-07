@@ -358,7 +358,7 @@ width:90%;
 height:6em;
 margin-bottom:5%;
 }
-section div.form input[type=submit]{
+section div.form input[type=submit], input[type=button]{
 border:groove 3px;
 margin:2% 25%;
 width:50%;
@@ -552,6 +552,13 @@ footer a{
     font-weight: 300;
     margin-top: 5rem;
      color: #ffb03b;
+}
+popup_res{
+      text-transform: none;
+}
+popup_res u, h1{
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 .popup_page-content button, #termsbtn{
