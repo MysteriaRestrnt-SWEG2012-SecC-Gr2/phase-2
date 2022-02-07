@@ -4,6 +4,8 @@ box-sizing:border-box;
 body{
 font-family:"Lato", sans-serif;
 transition:background-color .5s;
+
+overflow:scroll;
 }
 ul{
  	list-style: none;
@@ -35,6 +37,7 @@ a:active{color:rgb(102, 255, 153);}
 .row{
 padding:0;
 margin:0;
+width:100%;
 }
 [class*="col-"] {
   float: left;
@@ -71,7 +74,7 @@ header{
 height:205px;
 margin:0,0,10px,0;
 padding:0,0,5px,0;
-background-color:rgba(1,1,1,.85);
+background-color:rgba(1,1,1,.7);
 border-radius:0 0 10px 10px;
 position:fixed;
 top:0%;
@@ -103,7 +106,7 @@ margin-left:0px;
 color:white;
 font-size:140%;
 font-family: Courier New, Lucida Console;
-text-shadow:1px 1px 2px silver;
+text-shadow:1px 1px 2px #ffb03b;
 margin-left:5px;
 border-radius:20px;
 padding:7px;
@@ -118,9 +121,9 @@ margin-left:5px;
 }
 .header nav a:hover{
  color:black;
- text-shadow:1px 1px 2px black;
- opacity:0.5;
- background-color:seashell;
+ text-shadow:1px 1px 2px #ffb03b;
+ opacity:0.8;
+ background-color:#ffb03b;
 }
 .headerShadow{
 filter:drop-shadow(5px 5px 5px rgb(80,80,80));
@@ -171,13 +174,13 @@ height:40px;
 background-color:rgba(0,0,0,.8);
 border:solid  2px;
 border-radius:50%;
+
 }
 #srchbtn:hover{
-width:43px;
-height:43px;
-background-color:rgba(26,26,26,.8);
-box-shadow:5px 5px 5px rgb(77,77,77);
-border-color:rgba(100,100,100,.8);
+transform:scale(120%,120%);
+background-color:rgba(20,20,20,.8);
+box-shadow:2px 2px 2px #ffb03b;
+border-color:#ffb03b;
 transition:0.3s;
 }
 #srchbtn,#query{
@@ -189,6 +192,7 @@ box-shadow:5px 5px 5px black;
 position:relative;
 width:60%;
 border-radius:18px;
+border-color:#ffb03b;
 padding:10px 10px;
 margin:5px 0;
 outline:none;
@@ -200,6 +204,7 @@ height:35px;
 max-width:80%;
 margin:0;
 padding:0;
+filter: invert(26%) sepia(89%) saturate(1583%) hue-rotate(1deg) brightness(96%) contrast(106%);
 }
 
 #sideNav{
