@@ -2,73 +2,36 @@
 <html>
 <head>
     <meta name="charset" content="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <meta name="author" content="Rediet">
-    <meta name="description" content="webpage for mysteria restaurant's table reservation terms and conditions.">
-    <meta name="keywords" content="terms,conditions,mysteria">
+    <meta name="author" content="rediet">
+    <meta name="description" content="webpage for mysteria restaurant's delivery">
+    <meta name="keywords" content="delivery,mysteria">
     <link rel="stylesheet" href="../../CSS/style-1.css">
-    <title>Reservation Cancellation Form</title>
-    <script src="node.js"></script>
-    <script>
-
-var name=document.resForm.name.value;
-var email=document.resForm.email.value;
-var date=document.resForm.date.value;
-var people=document.resForm.people.value;
-var atPosition=email.indexOf('@');
-var dotPosition=email.lastIndexOf('.');
-
-function checkForm(){
-if(name==null||name=""){
-alert("Name Required");
-return false;
-}
-else if (email==null||email==""){
-alert("Email Required");
-return false;
-}
-else if((dotPosition-atPosition<1)||(email.length-dotPosition<3)||(atPosition<1)){
-alert("Invalid Email");
-return false;
-}
-else if(date==null||date==""){
-alert("Date Required");
-return false;
-}
-
-else if((date.length>10)||(date.length<10)){
-alert("Invalid Date Format");
-return false;
-}
-else if(people<1||people>10)
-{
-alert("number of people cannot exceed 10 or less than 1");
-return false;
-}
-else{return true;}
-}
-</script>
+    <title>Table Reservation cancellation form</title>
     <script>
         function openNav(){
-            document.getElementById("sideNav").style.width="250px";
-            document.getElementById("body").style.marginLeft="250px";
-            document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+            document.getElementById("sideNav").style.width="18%";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor="rgba(0,0,0,0.7)";
+
         }
          function closeNav(){
             document.getElementById("sideNav").style.width="0";
-            document.getElementById("body").style.marginLeft="0";
+            document.body.style.marginLeft="0";
             document.body.style.backgroundColor="white";
         }
+
     </script>
 </head>
 <body>
-<header>
+<header class="row">
     <div id="sideNav">
         <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
-        <ul type="none" >
+        <ul>
             <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
-            <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
-            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
+            <li><a href="../reservation/reservationnew.html #popup1">Table reservation </a></li><hr/>
+            <li><a href="../event/reservationnew.html #popup1">Event reservation </a></li><hr/>
             <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
             <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
             <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
@@ -80,15 +43,17 @@ else{return true;}
             <div id="navigation">
                 <nav id="letters">
                     <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
-                    <a href="../home/home.html">Home</a>
-                    <a href="../review/contact.html">Contact Us</a>
-                    <a href="../review/about us2.html">About Us</a>
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Feedback</a>
                 </nav>
                 <nav id="logos">
-                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
-                    <a href="../home/home.html">&#8962;</a>
-                    <a href="../review/contact.html">&#8505;</a>
-                    <a href="../review/about us2.html">&#9743;</a>
+                    <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
+                    <a href="#">&#8962;</a>
+                    <a href="#">&#8505;</a>
+                    <a href="#">&#9743;</a>
+                    <a href="#">&#x1f5e8;</a>
                 </nav>
             </div>
             <div id="logo">
@@ -103,20 +68,26 @@ else{return true;}
         </form>
     </div>
 </header>
+
 <section>
+    <div class="row" id="sectionTopOrder">
+        <div class="topTxt">
+            <h1><span class="restaurant">Mysteria restaurant</span> reservation</h1>
+            <p>...never keep you waiting</p>
+        </div>
+    </div>
     <div class="row">
         <div class="form col-6">
-            <p>Reservation cancellation Form</p>
-            <form name="resForm" action="cancelled.html" onsubmit="checkForm()">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder= "Enter Full Name"><br>
 
+            <form name="resForm" class="delivForm" action="#popup3">
+                <hr><h1>
+                Reservation cancellation Form</h1> <hr>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder= "Full Name"><br>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder= "Enter Email"><br>
-
                 <label for="date">Date:</label>
                 <input type="date" name="date" id="date"><br>
-
                 <label for="position">Position:</label>
                 <select name="position" id="position">
                     <option value="outdoor">Out door</option>
@@ -132,8 +103,7 @@ else{return true;}
                 </select><br>
                 <label for="people">How many people?</label>
                 <input type="number" name="people" id="people" placeholder= "Number of people"><br>
-                <input type="button" onclick="window.location.href='terms and conditions.html';" value="Terms and conditions"/>
-                <input type="submit" value="cancel Reservation"><hr><br>
+                <a href="#popup3"><input type="submit" value="cancel Reservation"/><hr><br></a>
                 You can also call:
                 <ul>
                     <li> +251110000101</li>
@@ -141,24 +111,50 @@ else{return true;}
                 </ul>
             </form>
         </div>
+        <div class="col-3 goto1">
+            <div class="goto"><a href="#btm">&#10225; &nbsp; Bottom</a></div>
+        </div>
+    </div>
+
+
+</section>
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="#Feedback" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>
+                You have cancelled your reservation successfully, Call us for more information or email Us at
+                 <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a><br>THANK YOU FOR CHOOSING US.<br>
+            </p>
+            <button  onclick="window.location.href='reservationnew.html';">Table Reservation Form</button>
+            <button  onclick="window.location.href='../event/events2.html';">Event Reservation Form</button>
+        </div>
     </div>
 </section>
+<!--<a href="#popup3">Feedback</a>-->
 <footer>
-    <div class="row">
-        <div class="col-3">
-            <ul>
-                <li><a href="../review/Feedback2.html">Feedback</a></li>
-            </ul>
-        </div>
-        <div class="footer">
-            <div class="col-6 followLinks">
-                <h4>follow us</h4><br>
-                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="https://t.me/mysteriaRestaurant"><i class="fab fa-linkedin-in"></i></a>
-
+    <div id="btm" class="feedback col-3">
+        <a href="#">Feedback</a>
+        <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
+    </div>
+    <div class="footer row">
+        <div class="col-9 followLinks">
+            <br><br>
+            <p>Follow us on </p>
+            <div id="btmlinks">
+                <a href="#"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/tg2.png"></a>&nbsp;
             </div>
+            <br><br>
+            <p  style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
         </div>
     </div>
 </footer>
