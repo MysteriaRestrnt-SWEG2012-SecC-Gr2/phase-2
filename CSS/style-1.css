@@ -581,6 +581,7 @@ popup_res{
 popup_res u, h1{
   text-transform: uppercase;
   font-family: sans-serif;
+	color:white;
 }
 
 .popup_page-content button, #termsbtn{
