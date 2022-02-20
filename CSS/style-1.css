@@ -264,7 +264,7 @@ padding:1%;
 overflow:hidden;
 
 }
-#sectionTop,#sectionTopOrder,#sectionTopContact{
+#sectionTop,#sectionTopOrder{
 padding:0;
 margin-left:0;
 opacity:.95;
@@ -278,28 +278,6 @@ clip-path:polygon(0 0,100% 0,100% 85%, 50% 100%,0 85%);
 }
 #sectionTopOrder{
 background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/bistro.jpg");
-}
-#sectionTopContact{
-background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../resources/images/contact.jpg");
-}
-.info{
-margin-left:17%;
-overflow:hidden;
-border-radius:20px;
-padding:10px;
-background-color:rgba(0,0,0,0.7);
-font-family:courier new;
-font-size:1em;
-color:#ffb03b;
-line-height:2;
-}
-.info h2{
-text-align:center;
-font-size:2em;
-font-family: cambria heading;
-color:#ffb03b;
-background-color:rgba(1,1,1,0.9);
-border-radius:20px;
 }
 .topTxt{
 font-family: 'Luxurious Roman', cursive;
@@ -380,7 +358,7 @@ width:90%;
 height:6em;
 margin-bottom:5%;
 }
-section div.form input[type=submit], input[type=button]{
+section div.form input[type=submit]{
 border:groove 3px;
 margin:2% 25%;
 width:50%;
@@ -574,14 +552,6 @@ footer a{
     font-weight: 300;
     margin-top: 5rem;
      color: #ffb03b;
-}
-popup_res{
-      text-transform: none;
-}
-popup_res u, h1{
-  text-transform: uppercase;
-  font-family: sans-serif;
-	color:white;
 }
 
 .popup_page-content button, #termsbtn{
