@@ -1046,10 +1046,10 @@ span.feedback-span {
 }
 
 .feedback-header-developers {
-  background-color: purple;
+  background-color: #ffb03b;
   border-bottom: 1px solid black;
   padding: 20px 40px;
-  color: white;
+  color: black;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -1081,11 +1081,11 @@ span.feedback-span {
 }
 
 .feedback-span-developers {
-  color: azure;
+  color: black;
 }
 
 .feedback-form-control-developers .feedback-input-developers {
-  border: 2px solid blue;
+  border: 2px solid black;
   border-radius: 4px;
   display: block;
   font-family: inherit;
