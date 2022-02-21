@@ -8,21 +8,23 @@
     <meta name="description" content="webpage for mysteria restaurant's delivery">
     <meta name="keywords" content="delivery,mysteria">
     <link rel="stylesheet" href="../../CSS/style-1.css">
+    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
     <title>Table Reservation cancellation form</title>
+<!--    <script src="validator.js"></script>-->
     <script>
         function openNav(){
             document.getElementById("sideNav").style.width="18%";
             //document.body.style.marginLeft="18%";
             document.body.style.backgroundColor="rgba(0,0,0,0.7)";
-
         }
          function closeNav(){
             document.getElementById("sideNav").style.width="0";
             document.body.style.marginLeft="0";
             document.body.style.backgroundColor="white";
         }
+</script>
 
-    </script>
+
 </head>
 <body>
 <header class="row">
@@ -43,17 +45,17 @@
             <div id="navigation">
                 <nav id="letters">
                     <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">Feedback</a>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/about us2.html">About us</a>
+                    <a href="../review/contact.html">Contact us</a>
+                    <a href="../review/Feedback2.html">Feedback</a>
                 </nav>
                 <nav id="logos">
                     <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
-                    <a href="#">&#8962;</a>
-                    <a href="#">&#8505;</a>
-                    <a href="#">&#9743;</a>
-                    <a href="#">&#x1f5e8;</a>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/about us2.html">&#8505;</a>
+                    <a href="../review/contact.html">&#9743;</a>
+                    <a href="../review/Feedback2.html">&#x1f5e8;</a>
                 </nav>
             </div>
             <div id="logo">
@@ -62,7 +64,7 @@
         </div>
     </div>
     <div id="search">
-        <form id="srchform" role="search">
+        <form id="srchform" role="search" onsubmit="search()">
             <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
             <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
         </form>
@@ -79,17 +81,17 @@
     <div class="row">
         <div class="form col-6">
 
-            <form name="resForm" class="delivForm" action="#popup3">
+            <form id="resForm" action="#popup3" method="post">
                 <hr><h1>
                 Reservation cancellation Form</h1> <hr>
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder= "Full Name"><br>
+                <input type="text" name="name" id="name" placeholder= "Full Name" required><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder= "Enter Email"><br>
+                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date"><br>
+                <input type="date" name="date" id="date" required><br>
                 <label for="position">Position:</label>
-                <select name="position" id="position">
+                <select name="position" id="position" >
                     <option value="outdoor">Out door</option>
                     <option value="indoor">Indoor</option>
                     <option value="roof top">Roof top</option>
@@ -102,7 +104,7 @@
                     <option value="family">Family Table</option>
                 </select><br>
                 <label for="people">How many people?</label>
-                <input type="number" name="people" id="people" placeholder= "Number of people"><br>
+                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
                 <a href="#popup3"><input type="submit" value="cancel Reservation"/><hr><br></a>
                 You can also call:
                 <ul>
@@ -128,15 +130,14 @@
                 You have cancelled your reservation successfully, Call us for more information or email Us at
                  <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a><br>THANK YOU FOR CHOOSING US.<br>
             </p>
-            <button  onclick="window.location.href='reservationnew.html';">Table Reservation Form</button>
-            <button  onclick="window.location.href='../event/events2.html';">Event Reservation Form</button>
+            <button  onclick="window.location.href='reservationnew.html';">Reserve Table </button>
+            <button  onclick="window.location.href='../event/events terms and conditions.html';">Reserve Event</button>
         </div>
     </div>
 </section>
-<!--<a href="#popup3">Feedback</a>-->
+
 <footer>
     <div id="btm" class="feedback col-3">
-        <a href="#">Feedback</a>
         <address>
             call:<br>
             +251110000101<br>
